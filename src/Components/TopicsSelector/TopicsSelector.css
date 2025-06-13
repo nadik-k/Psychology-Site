@@ -1,0 +1,107 @@
+.topics-selector {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.toggle-btn {
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #0056b3;
+}
+
+.checkbox-list {
+  display: grid;
+  gap: 12px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.checkbox-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* вертикальное выравнивание */
+  gap: 2px;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 1.2;
+  box-sizing: content-box;
+  border: none;
+}
+
+.checkbox-item input[type="checkbox"] {
+  transform: scale(0.8);
+  margin: 0;
+  padding: 0;
+  accent-color: #007bff;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  height: 20px;
+}
+
+.selected-topics {
+  margin-top: 20px;
+}
+
+.selected-label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.topic-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.topic-badge {
+  background-color: #e6f2ff;
+  height: 30px;
+  border: 1px solid #007bff;
+  color: #007bff;
+  border-radius: 20px;
+  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  margin: 0;
+}
+
+.topic-badge:hover {
+  background-color: #d0e9ff;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 6px;
+  cursor: pointer;
+  color: #ff4d4f;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.2s ease;
+}
+
+.remove-btn:hover {
+  color: #c00;
+  background: none;
+}

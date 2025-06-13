@@ -1,0 +1,36 @@
+.lg-page {
+  padding: 20px 37%;
+}
+.block-lg-page {
+  background-color: white;
+  border-radius: 12px;
+  border: 2px solid #00796b;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.t-lg-page {
+  color: #00796b;
+  margin: 0px;
+  text-align: center;
+}
+.st-lg-page {
+  text-align: center;
+}
+.btn-login-page {
+  border: 2px solid #00796b;
+  border-radius: 12px;
+  color: #00796b;
+  background-color: #e9e7d6;
+  width: 50%;
+  padding: 10px;
+  margin: 0px auto;
+  font-size: 20px;
+}
+.inp-lg-page {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  border: 2px solid #00796b;
+  font-size: 20px;
+}

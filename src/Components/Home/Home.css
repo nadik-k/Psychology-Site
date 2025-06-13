@@ -1,0 +1,334 @@
+/* Загальні стилі */
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background: #e9e7d6;
+  border-radius: 50px;
+  margin-top: 30px;
+}
+
+.hero-content {
+  flex: 1 1 500px;
+  padding-right: 2rem;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #00796b;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content hr {
+  border: none;
+  height: 2px;
+  background: #00796b;
+  width: 70%;
+  margin: 1rem 0;
+  margin: 0 auto;
+}
+
+.consult-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #00796b;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.consult-button:hover {
+  background-color: #004d40;
+}
+
+.hero-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.home_picture {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Help Section */
+.help-section {
+  padding: 40px 20px;
+}
+
+.help-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-header .subtitle {
+  text-transform: uppercase;
+  color: #888;
+  font-size: 14px;
+}
+
+.section-header h2 {
+  margin: 10px 0;
+  font-size: 28px;
+}
+
+.section-header .description {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #666;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.card p {
+  color: #555;
+  font-size: 15px;
+}
+
+.pink {
+  border-top: 5px solid #f8a5c2;
+}
+.grey {
+  border-top: 5px solid #bdc3c7;
+}
+.violet {
+  border-top: 5px solid #9b59b6;
+}
+.blue {
+  border-top: 5px solid #3498db;
+}
+.green {
+  border-top: 5px solid #2ecc71;
+}
+.yellow {
+  border-top: 5px solid #f1c40f;
+}
+.orange {
+  border-top: 5px solid #e67e22;
+}
+.aqua {
+  border-top: 5px solid #1abc9c;
+}
+
+/* Team Section */
+.team-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-container h2 {
+  text-align: center;
+  font-size: 25pt;
+  margin-bottom: 30px;
+}
+
+.team-description {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: #666;
+}
+
+.team-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* Emotion Calculator Section */
+.emotion-container {
+  margin: 0 200px;
+  border-radius: 10%;
+  text-align: center;
+  background-color: #e9e7d6;
+  padding: 4rem 2rem;
+}
+
+.emotion-container h2 {
+  margin-bottom: 1rem;
+  color: #00796b;
+}
+
+.slider-wrapper {
+  margin: 1.5rem auto;
+  max-width: 600px;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.slider-wrapper label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.slider-wrapper input[type="range"] {
+  width: 100%;
+  padding: 0;
+}
+
+.slider-value {
+  position: absolute;
+  top: 10;
+  transform: translateX(-50%);
+  background-color: #00796b;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #f57f17;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ef6c00;
+}
+
+.score {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #f57f17;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 4rem 2rem;
+}
+
+.faq-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.faq-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.faq-item {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.faq-item.open {
+  background-color: #c3f3d5;
+}
+
+.faq-item h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #006813;
+}
+
+.faq-item p {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.faq-content {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.faq-picture {
+  flex: 1;
+}
+
+.faq_picture {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: contain;
+}
+
+.faq-text {
+  flex: 2;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .slider-value {
+    display: none;
+  }
+}

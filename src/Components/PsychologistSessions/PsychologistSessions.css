@@ -1,0 +1,144 @@
+.psychologist-container {
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.psychologist-session-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.psy-session-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.psy-info {
+  flex: 1;
+}
+
+.psy-info h2 {
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.psy-info p {
+  margin: 4px 0;
+}
+
+.psy-status {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.psy-status.upcoming {
+  background-color: #dff9fb;
+  color: #0984e3;
+}
+
+.psy-status.completed {
+  background-color: #d4efdf;
+  color: #27ae60;
+}
+
+.psy-status.canceled {
+  background-color: #fbecec;
+  color: #c0392b;
+}
+
+.psy-notes {
+  flex: 1;
+  max-width: 400px;
+}
+
+.note-block {
+  background: #f4f6f7;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.note-form textarea {
+  width: 100%;
+  min-height: 80px;
+  border-radius: 8px;
+  padding: 8px;
+  resize: vertical;
+  font-size: 14px;
+}
+
+.note-form button,
+.add-note-btn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.session-filter {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  background-color: #ecf0f1;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.filter-btn:hover {
+  background-color: #d0d3d4;
+}
+
+.filter-btn.active {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.no-sessions {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  margin-top: 30px;
+}
+
+.note-form button:hover,
+.add-note-btn:hover {
+  background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+  .psy-session-card {
+    flex-direction: column;
+  }
+}

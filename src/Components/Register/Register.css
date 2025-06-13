@@ -1,0 +1,242 @@
+/* === Загальні стилі контейнера === */
+.reg-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  margin: 30px auto;
+}
+
+.reg-container .image-side {
+  width: 800px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px;
+}
+
+.form-box {
+  width: 500px;
+  padding: 40px;
+}
+
+/* === Заголовок === */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* === Інпут-форми === */
+.input-columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-columns input,
+.input-columns input[type="date"],
+.input-columns input[type="email"],
+.input-columns input[type="password"] {
+  flex: 1 1 calc(50% - 10px);
+  min-width: 200px;
+  box-sizing: border-box;
+}
+
+/* === Кнопка відправки === */
+button {
+  padding: 12px;
+  background-color: #2c978d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #257f76;
+}
+
+/* === Посилання перемикання (реєстрація/вхід) === */
+.switch-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.switch-link a {
+  color: #2c978d;
+  text-decoration: none;
+}
+
+.switch-link a:hover {
+  text-decoration: underline;
+}
+
+/* === Радіо-кнопки === */
+.radio-group {
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.custom-radio {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  font-size: 16px;
+}
+
+.custom-radio input[type="radio"] {
+  display: none;
+}
+
+.custom-radio .radio-mark {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #2c978d;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  margin-right: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.custom-radio input[type="radio"]:checked + .radio-mark::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #2c978d;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+.custom-radio:hover .radio-mark {
+  border-color: #257f76;
+}
+
+/* === Повідомлення про помилки === */
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* === Адаптивність === */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .image-side,
+  .form-box {
+    width: 100%;
+  }
+
+  .image-side {
+    padding: 20px;
+  }
+
+  .form-box {
+    padding: 30px 20px;
+  }
+}
+
+/* === Поля для психолога === */
+.psycholog-fields {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+select[multiple] {
+  height: 120px;
+}
+
+/* === Селектор тем (мультивибір) === */
+.topic-selector {
+  margin-top: 1rem;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+.topic-selector .select {
+  width: 100%;
+  height: 120px;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  resize: vertical;
+  overflow-y: auto;
+}
+
+/* === Вибрані теми === */
+.select-topics {
+  width: 100%;
+  height: 150px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+.selected-label {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  color: #4b5563;
+}
+
+.topic-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.topic-badge {
+  display: inline-flex;
+  align-items: center;
+  background-color: #e0e0e0;
+  color: #333;
+  border-radius: 20px;
+  padding: 6px 10px;
+  margin: 4px;
+  font-size: 13px;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  margin-left: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #555;
+}
+
+.remove-btn:hover {
+  color: #b91c1c;
+}
+
+.psycholog-fields input[type="number"] {
+  margin-top: 20px;
+}

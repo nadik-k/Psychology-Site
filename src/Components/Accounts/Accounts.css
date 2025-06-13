@@ -1,0 +1,49 @@
+.acc-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px 20px;
+}
+.acc-card {
+  display: flex;
+  width: 600px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1),
+    0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  border-radius: 12px;
+  padding: 10px 10px;
+  margin-bottom: 12px;
+}
+.acc-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), 0 8px 16px rgba(0, 0, 0, 0.15),
+    0 16px 24px rgba(0, 0, 0, 0.1);
+}
+.acc-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.acc-card p {
+  font-size: 20px;
+  color: #00796b;
+}
+.bnt-del {
+  padding: 10px 10px;
+  border-radius: 12px;
+  color: #d32f2f;
+  font-weight: 700;
+  border: 2px solid #d32f2f;
+  background-color: white;
+}
+.bnt-del:hover {
+  padding: 10px 10px;
+  border-radius: 12px;
+  color: #d32f2f;
+  font-weight: 700;
+  border: 2px solid #d32f2f;
+  background-color: #d32f2f2c;
+}

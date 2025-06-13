@@ -1,0 +1,134 @@
+.diary-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.diary-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.diary-entry-form {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.diary-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.mood-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mood-button {
+  display: flex;
+  align-items: center;
+  color: black;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-weight: 500;
+}
+
+.mood-button.selected {
+  border-color: #2563eb;
+  background-color: #eef4ff;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.icon.happy {
+  color: #16a34a;
+}
+
+.icon.neutral {
+  color: #eab308;
+}
+
+.icon.sad {
+  color: #dc2626;
+}
+
+.note-textarea {
+  width: 700px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  resize: none;
+  font-size: 1rem;
+}
+
+.save-button {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.save-button:hover {
+  background-color: #1e40af;
+}
+
+.entry-list-section {
+  margin-top: 2rem;
+}
+
+.entry-list-title {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.no-entries-text {
+  color: #777;
+}
+
+.entry-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.entry-card {
+  background-color: #fff;
+  border-left: 4px solid #2563eb;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.entry-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.entry-text {
+  font-size: 1rem;
+  color: #333;
+}

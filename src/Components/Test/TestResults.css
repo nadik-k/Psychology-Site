@@ -1,0 +1,60 @@
+.test-results-container {
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.test-title {
+  font-size: 24pt;
+  color: #333;
+}
+
+.chart-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chart-container {
+  background-color: #f9f9ff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.diagram{
+  margin: 0 auto;
+}
+
+.status-description {
+  max-width: 700px;
+  background-color: #f1f5ff;
+  padding: 1.5rem;
+  border-radius: 15px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.status-description h3 {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.status-description p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+h3{
+  margin: 0 auto;
+  width: 95%;
+  margin-bottom: 10px;
+}
+
+p{
+  margin: 0 auto;
+  width: 95%;
+  margin-bottom: 10px;
+}

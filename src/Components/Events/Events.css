@@ -1,0 +1,160 @@
+/* === Основна секція === */
+.events-section-alt {
+  padding: 80px 20px;
+  color: #1a3d3f;
+}
+.events-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+/* === Заголовок секції === */
+.events-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.events-header h1 {
+  font-size: 36px;
+  color: #135c58;
+}
+.events-header p {
+  font-size: 18px;
+  color: #3d6b6a;
+  max-width: 700px;
+  margin: 0 auto;
+}
+/* === Підзаголовки подій === */
+.event-subtitle {
+  font-size: 28px;
+  margin: 50px 0 20px;
+  color: #144742;
+  text-align: left;
+}
+/* === Контейнер для карток подій === */
+.event-cards-alt {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+/* === Оформлення кожної картки події === */
+.event-spotlight {
+  display: flex;
+  flex-direction: row;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+/* === Картки минулих подій: менш помітні === */
+.past-events .event-spotlight {
+  opacity: 0.7;
+  filter: grayscale(20%) brightness(0.8);
+}
+/* === Зображення події === */
+.event-img {
+  width: 45%;
+  min-height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+/* === Інформаційна частина картки === */
+.event-info {
+  padding: 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.event-date-alt {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+.event-info h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #135c58;
+}
+.event-info p {
+  font-size: 16px;
+  color: #444;
+}
+/* === Кнопка реєстрації === */
+.alt-button {
+  margin-top: 20px;
+  align-self: start;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 30px;
+  background-color: #2f8571;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.alt-button:hover {
+  background-color: #256b58;
+}
+
+@media (max-width: 768px) {
+  .events-section-alt {
+    padding: 60px 15px;
+  }
+  .events-header h1 {
+    font-size: 28px;
+  }
+  .events-header p {
+    font-size: 16px;
+  }
+  .event-subtitle {
+    font-size: 22px;
+    margin: 40px 0 15px;
+  }
+  /* Картки подій стають вертикальними */
+  .event-spotlight {
+    flex-direction: column;
+  }
+  .event-img {
+    width: 100%;
+    min-height: 200px;
+  }
+  .event-info {
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  .event-info h2 {
+    font-size: 20px;
+  }
+  .event-info p {
+    font-size: 15px;
+  }
+  .alt-button {
+    padding: 8px 20px;
+    font-size: 14px;
+    align-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .events-header h1 {
+    font-size: 24px;
+  }
+  .events-header p {
+    font-size: 15px;
+  }
+  .event-subtitle {
+    font-size: 20px;
+  }
+  .event-info h2 {
+    font-size: 18px;
+  }
+  .event-info p {
+    font-size: 14px;
+  }
+  .alt-button {
+    font-size: 13px;
+    padding: 8px 18px;
+  }
+}

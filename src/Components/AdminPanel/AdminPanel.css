@@ -1,0 +1,35 @@
+.ad-menu {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: space-around;
+  margin: 10px auto;
+}
+.btn-ad-menu {
+  border: none;
+  color: #00796b;
+  background-color: #f3f3f3;
+  padding: 10px;
+  margin: 0px auto;
+  font-size: 20px;
+  font-weight: 400;
+  border-bottom: none;
+}
+
+.btn-ad-menu:hover {
+  border: none;
+  color: #00796b;
+  background-color: none;
+  padding: 10px;
+  margin: 0px auto;
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 3px solid #00796b;
+}
+.ad-p-block {
+  padding: 20px;
+  width: 80%;
+  height: 70vh;
+  background-color: white;
+  margin: 15px auto;
+}
